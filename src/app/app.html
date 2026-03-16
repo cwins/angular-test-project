@@ -291,7 +291,7 @@
             { name: 'Outline Button', inputs: { variant: 'outline' } }
           ]; track example.inputs) {
             <tr>
-              <td>hi {{ example.name }}</td>
+              <td>{{ example.name }}</td>
               <td>
                 @for (item of example.inputs | keyvalue; track item) {
                   <strong>{{ item.key }}</strong>: {{ item.value }}
