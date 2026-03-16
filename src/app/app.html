@@ -8,6 +8,10 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <style>
+  html, body {
+    font-size: 14px;
+  }
+
   :host {
     --bright-blue: oklch(51.01% 0.274 263.83);
     --electric-violet: oklch(53.18% 0.28 296.97);
@@ -82,9 +86,18 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    max-width: 700px;
+    /* max-width: 700px; */
     margin-bottom: 3rem;
   }
+
+  /* .left-side {
+    flex-grow: 3;
+  }
+
+  .right-side {
+    flex-grow: 1;
+    flex-shrink: 1;
+  } */
 
   .content h1 {
     margin-top: 1.75rem;
@@ -169,6 +182,32 @@
     fill: var(--gray-900);
   }
 
+  table{
+    border: 1px solid #aaaaaa;
+    border-collapse: collapse;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    text-align: center;
+    width: 100%;
+  }
+
+  thead > tr {
+    border-bottom: 2px solid #cccccc;
+  }
+
+  td, th {
+    border: 1px solid #cccccc;
+    padding: 8px;
+  }
+
+  th {
+    font-size: 14px;
+  }
+  
+  td {
+    font-size: 13px;
+  }
+
   @media screen and (max-width: 650px) {
     .content {
       flex-direction: column;
@@ -234,6 +273,36 @@
       </svg>
       <h1>Hello, {{ title() }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Example Description</th>
+            <th>Example Inputs</th>
+            <th style="text-align: center;">Component Preview</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (example of [
+            { name: 'Small Button', inputs: { size: 'small' } },
+            { name: 'Medium Button', inputs: { size: 'medium' } },
+            { name: 'Large Button', inputs: { size: 'large' } },
+            { name: 'Primary Button', inputs: { variant: 'primary' } },
+            { name: 'Secondary Button', inputs: { variant: 'secondary' } },
+            { name: 'Outline Button', inputs: { variant: 'outline' } }
+          ]; track example.inputs) {
+            <tr>
+              <td>hi {{ example.name }}</td>
+              <td>
+                @for (item of example.inputs | keyvalue; track item) {
+                  <strong>{{ item.key }}</strong>: {{ item.value }}
+                  <br />
+                }
+              </td>
+              <td><ui-button label="Click Me!" [size]="$any(example.inputs.size)" [variant]="$any(example.inputs.variant)"></ui-button></td>
+            </tr>
+          }
+        </tbody>
+      </table>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">

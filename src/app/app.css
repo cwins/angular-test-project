@@ -1,0 +1,8 @@
+:host {
+    --action-primary-background: #ebb0f2;
+    --action-primary-foreground: #261f1c;
+    --action-secondary-background: #f8f0e0;
+    --action-secondary-foreground: #93285e;
+    --action-outline-background: #fefefe;
+    --action-outline-foreground: #2a2a2a;
+}
