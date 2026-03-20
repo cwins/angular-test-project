@@ -5,4 +5,12 @@
     --action-secondary-foreground: #93285e;
     --action-outline-background: #fefefe;
     --action-outline-foreground: #2a2a2a;
+
+    --layout-spacing-small: 4px;
+    --layout-spacing-medium: 12px;
+    --layout-spacing-large: 24px;
+
+    --layout-background-standard: #ffffff;
+    --layout-background-subtle: #f3f3f9;
+    --layout-background-transparent: transparent;
 }

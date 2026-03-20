@@ -1,0 +1,21 @@
+.ui-vstack {
+    display: flex;
+    flex-direction: column;
+    gap: var(--layout-spacing-medium);
+}
+
+.ui-vstack__gap-none {
+    gap: 0;
+}
+
+.ui-vstack__gap-small {
+    gap: var(--layout-spacing-small);
+}
+
+.ui-vstack__gap-medium {
+    gap: var(--layout-spacing-medium);
+}
+
+.ui-vstack__gap-large {
+    gap: var(--layout-spacing-large);
+}

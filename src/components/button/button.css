@@ -1,3 +1,12 @@
+:host {
+    pointer-events: none;
+}
+
+button {
+    cursor: pointer;
+    pointer-events: auto;
+}
+
 .ui-button {
     background: #efefef;
     border-color: transparent;

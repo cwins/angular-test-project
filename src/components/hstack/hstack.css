@@ -1,0 +1,22 @@
+.ui-hstack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--layout-spacing-medium);
+}
+
+.ui-hstack__gap-none {
+    gap: 0;
+}
+
+.ui-hstack__gap-small {
+    gap: var(--layout-spacing-small);
+}
+
+.ui-hstack__gap-medium {
+    gap: var(--layout-spacing-medium);
+}
+
+.ui-hstack__gap-large {
+    gap: var(--layout-spacing-large);
+}

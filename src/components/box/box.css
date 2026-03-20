@@ -1,0 +1,37 @@
+.ui-box {
+    background: var(--layout-background-standard);
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: var(--layout-spacing-medium);
+}
+
+.ui-box__small {
+    padding: var(--layout-spacing-small);
+}
+
+.ui-box__medium {
+    padding: var(--layout-spacing-medium);
+}
+
+.ui-box__large {
+    padding: var(--layout-spacing-large);
+}
+
+.ui-box__border {
+    border: 1px solid #cccccc;
+}
+
+.ui-box__standard {
+    background: var(--layout-background-standard);
+}
+
+.ui-box__subtle {
+    background: var(--layout-background-subtle);
+}
+
+.ui-box__transparent {
+    background: var(--layout-background-transparent);
+}
