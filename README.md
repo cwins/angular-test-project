@@ -1,5 +1,19 @@
 # AngularTestProject
 
+This is just meant to be a sandbox so I can build out some things with Angular.
+I haven't used Angular in quite some time, so I want to get more familiar with its current state and what kinds of patterns exist for different flows.
+
+I started with a barebones app using the Angular generator, which was pretty nice.
+Then I built some foundational UI components, leveraging documentation when I got stuck.
+In many ways, I feel like I'm writing Mustache and Handlebars templates again, which isn't great.
+
+I'm not sure how far I'll go with this, as it's not intended to be a fully polished project.
+
+>NOTE: The remainder of the README was created with the Angular generator.
+
+## Generated README
+
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.2.
 
 ## Development server
